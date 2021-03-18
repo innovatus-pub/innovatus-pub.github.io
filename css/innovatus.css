@@ -40,12 +40,17 @@
   .sidebar a:not(:first-child) {display: none;}
   .sidebar a.icon {
     display: block;
+    position:fixed;
   }
 
   .sidebar.responsive {position: fixed;}
   .sidebar.responsive a.icon {
     left: 0;
     top: 0;
+    margin-bottom:10px;
+  }
+  #home {
+    margin-top:70px;
   }
   .sidebar.responsive a.nav {
     float: none;
@@ -60,10 +65,13 @@
       height: auto;
       position: relative;
     }
-    .sidebar a {float: left;}
     div.content {margin-left: 0;}
     .citation_title{
       margin-top:unset !important;
+    }
+    .sidebar a.icon {
+      display: block;
+      position:fixed;
     }
   }
   
