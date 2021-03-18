@@ -1,4 +1,4 @@
-![UA&P Logo](images/Square_logo.jpg)
+![UA&P Logo](images/Square_Logo.jpg)
 # Welcome to Innovatus!
 Official Journal of the Information Science and Technology Department of the University of Asia and the Pacific (UA&P)
 
