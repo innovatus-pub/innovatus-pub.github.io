@@ -1,2 +1,9 @@
 # innovatus-pub.github.io
-Journal Archive of Papers
+Welcome to Innovatus!
+Official Journal of the Information Science and Technology Department of the University of Asia and the Pacific (UA&P)
+
+This is the Journal archive of published papers for the journal.
+
+Official Website: https://innovatus.uap.asia
+Facebook: https://www.facebook.com/InnovatusUAPIST
+Twitter: https://twitter.com/InnovatusJ
