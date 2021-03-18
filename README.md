@@ -1,4 +1,4 @@
-![UA&P Logo](images/Square_Logo.jpg | width=100)
+<img src="images/Square_Logo.jpg" height="auto" width="100px">
 # Welcome to Innovatus!
 Official Journal of the Information Science and Technology Department of the University of Asia and the Pacific (UA&P)
 
