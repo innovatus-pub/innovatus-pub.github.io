@@ -5,7 +5,7 @@ Official Journal of the Information Science and Technology Department of the Uni
 This is the Journal archive of published papers for the journal.
 
 Archived Issues:
-* Official Website: [Innovatus 2018 Vol. 1, No. 1](innovatus-2018-volume-1-number-1.html)
+* [Innovatus 2018 Vol. 1, No. 1](innovatus-2018-volume-1-number-1.html)
 
 Website Information:
 * Official Website: [https://innovatus.uap.asia](https://innovatus.uap.asia)
