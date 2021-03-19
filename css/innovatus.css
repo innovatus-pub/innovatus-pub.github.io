@@ -90,8 +90,13 @@
     width: 100%;
   }
 
-  .citation_title{
+  .journal_title,.citation_title{
     margin-top: 80px;
+  }
+
+  .journalsection{
+    background-color: #f1f1f1;
+    padding:3px;
   }
 
   .container-fluid{
@@ -100,10 +105,21 @@
     padding-bottom:10px;
   }
 
-  .paperdetails{
+  .paperdetails, #journalcontent{
     background-color:white;
     padding:15px;
     border-radius:5px;
+  }
+
+  .tocpaper, a.tocpaper:visited, a.tocpaper:hover{
+    color:black;
+    text-decoration:none;
+    font-size:large;
+  }
+
+  .tocauthors{
+    font-style:italic;
+    font-size:smaller;
   }
 
   #apa,#harvard,#ieee{
