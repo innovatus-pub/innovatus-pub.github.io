@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>They Know: A Pathfinding Rational Agent via Knowledge Acquistion Modeling from Player Behavior and Enhanced A* Algorithm</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="citation_title" content="They Know: A Pathfinding Rational Agent via Knowledge Acquistion Modeling from Player Behavior and Enhanced A* Algorithm">
+        <meta name="citation_author" content="Aviles, Joshua Rei">
+        <meta name="citation_author" content="Barcena, Joshua Philip">
+        <meta name="citation_author" content="Hispano, Christopher John">
+        <meta name="citation_author" content="Lucas, Jaen Dave">
+        <meta name="citation_author" content="Torralba, Edwin M.">
+        <meta name="citation_publication_date" content="2019/05/01">
+        <meta name="citation_journal_title" content="Innovatus">
+        <meta name="citation_volume" content="2">
+        <meta name="citation_issue" content="1">
+        <meta name="citation_firstpage" content="6">
+        <meta name="citation_lastpage" content="11">
+        <meta name="citation_pdf_url" content="https://drive.google.com/file/d/1dvJpCkx91kCEMtC-TAo7YaUwiN4lRvhU/view?usp=sharing">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="../js/site.js"></script>
+        <link rel="stylesheet" href="../css/innovatus.css">
+    </head>
+    <body>
+        <article>
+            <div class="sidebar" id="innovnav">
+                <a href="javascript:void(0);" class="icon" onclick="foldmenu()">
+                    &#9776;
+                </a>
+                <a id="home" class="nav" href="https://sites.google.com/uap.asia/innovatus/home">Home</a>
+                <a class="nav" href="https://sites.google.com/uap.asia/innovatus/why-submit-to-innovatus">Why Innovatus?</a>
+                <a class="nav" href="https://sites.google.com/uap.asia/innovatus/call-for-papers">Call for Papers</a>
+                <a class="nav" href="https://sites.google.com/uap.asia/innovatus/for-authors">For Authors</a>
+                <a class="nav" href="https://sites.google.com/uap.asia/innovatus/policies">Policies</a>
+                <a class="nav" href="https://sites.google.com/uap.asia/innovatus/submit-your-research-papers">Submit your Research Papers</a>
+                <a class="nav" href="https://sites.google.com/uap.asia/innovatus/editorial-board">Editorial Board</a>
+                <a class="nav" href="https://sites.google.com/uap.asia/innovatus/research-archive">Research Archive</a>
+                <a class="nav" href="../innovatus-2019-volume-2-number-1.html">Back to Journal Publication</a>
+            </div>
+            <div class="container-fluid">
+                <header>
+                    <div class="journalbanner">
+                        <h3 id="journalname"><img src="../images/sse_logo.png" width="25px" height="auto">UA&P Innovatus</h3>
+                    </div>
+                    <h1 class="citation_title">They Know: A Pathfinding Rational Agent via Knowledge Acquistion Modeling from Player Behavior and Enhanced A* Algorithm</h1>
+                </header>
+                <div class="paperdetails">
+                    <div id="author">
+                        <h2>Authors</h2>
+                        <h3 class="citation_author" tabindex="-1">
+                            Joshua Rei Aviles
+                        </h3>
+                        <h3 class="citation_author" tabindex="-1">
+                            Joshua Philip Barcena
+                        </h3>
+                        <h3 class="citation_author" tabindex="-1">
+                            Christopher John Hispano
+                        </h3>
+                        <h3 class="citation_author" tabindex="-1">
+                            Jaen Dave Lucas
+                        </h3>
+                        <h3 class="citation_author" tabindex="-1">
+                            Edwin M. Torralba
+                        </h3>
+                        <em>University of Santo Tomas</em>
+                    </div>
+                    <div id="publication">
+                        <h2>Published in:</h2>
+                            <em>Innovatus Volume 2, Issue 1, 2019<br />
+                            <a href="https://portal.issn.org/resource/ISSN/2651-6993">ISSN (Print): 2651-6993</a></em>
+                    </div>
+                    <div id="citeas">
+                        <h2>Cite as:</h2>
+                        <em>APA 7th Edition:</em>
+                        <span id="apa">
+                            Aviles, J., Barcena, J., Hispano, C., Lucas, J., & Torralba, E. (2019). They Know: A Pathfinding Rational Agent via Knowledge Acquistion Modeling from Player Behavior and Enhanced A* Algorithm. Innovatus, 2(1), 6-11. 
+                        </span> 
+                        <em>Harvard:</em>
+                        <span id="harvard">
+                            Aviles, J., Barcena, J., Hispano, C., Lucas, J. and Torralba, E., 2019. They Know: A Pathfinding Rational Agent via Knowledge Acquistion Modeling from Player Behavior and Enhanced A* Algorithm. Innovatus, 2(1), pp.6-11.
+                        </span>
+                        <em>IEEE:</em>
+                        <span id="ieee">
+                            [1] J. Aviles, J. Barcena, C. Hispano, J. Lucas and E. Torralba, "They Know: A Pathfinding Rational Agent via Knowledge Acquistion Modeling from Player Behavior and Enhanced A* Algorithm", Innovatus, vol. 2, no. 1, pp. 6-11, 2019.
+                        </span>
+                    </div>
+                    <div id="abstract">
+                        <h2>Abstract</h2>
+                        <span>
+                            Modern games have used Artificial Intelligence as a core element of game design and mechanics. Artificial Intelligence has thrived in many fields; however, the enhancement of pathfinding algorithms of AIs in games have remained stagnant. Moreover, numerous issues with regards to the exploitable plot of games have been raised by several gamers and game developers. The purpose of this research is to develop They Know - a survival themed thriller game with 4J MT-Adaptive A* - an adaptive and enhanced pathfinding algorithm created using A* as basis, to reduce the predictability of in-game agents by using the developed algorithm and by modifying agents with knowledge acquisition, to distinguish the personality and emotion of modern players based on the reaction of players to in-game situations, and to acquire data for determining the motivation of contemporary gamers for playing. The efficiency of the developed algorithm was compared with Lazy MT – Adaptive A* developed by Koenig (2007). Questionnaires developed by HEXACO, Power (2017), and Demetrovics (2011) were used as standards for acquiring data from the respondents to determine the respondents’ personality, degree of predictability of the game, and the motivation of players in playing. Data were gathered from grades 11 and 12 students of the University of Santo Tomas – Senior High School.
+                        </span>
+                        </div>
+                    <div id="keyword">
+                        <h2>Keywords</h2>
+                        <span>
+                            4J MT-Adaptive A*, Lazy MT-Adaptive A*, Knowledge Acquisition, Adaptive, Predictability
+                        </span>
+                    </div>
+                    <div id="download">
+                        <h2>Download Papers</h2>
+                        <ul>
+                            <li><a href="https://drive.google.com/file/d/1dvJpCkx91kCEMtC-TAo7YaUwiN4lRvhU/view?usp=sharing">Direct Download</a></li>
+                            <li><a href="https://ejournals.ph/article.php?id=14056">E-Journals.ph</a></li>
+                        </ul>
+                    </div>
+                    <div id="references">
+                        <h2>References</h2>
+                        <ol>
+                            <li>
+                                Desjardins, J. (2017, January 11). Infographic: The Evolution of the Video Games Market. Retrieved April 14, 2018, from <a href="http://www.visualcapitalist.com/history-video-games-market/">http://www.visualcapitalist.com/history-video-games-market/</a>
+                            </li>
+                            <li>
+                                Gerogeson, J., & Child, C. (2016). NPCS AS PEOPLE, TOO: THE EXTREME AI PERSONALITY ENGINE. University of London.
+                            </li>
+                            <li>
+                                Krishnaswamy, N. (2009). Comparison of Efficiency in Pathfinding Algorithms in Game Development. Technical Reports.
+                            </li>
+                            <li>
+                                Zachariah, R., Jadhav, R., Mishra, R., & Kishan, P. (2015). A Survey on Optimal Path Finding Techniques for Pursuing a Moving Target. IJLTEMAS,IV(II), 122-124. Retrieved April 14, 2018.
+                            </li>
+                            <li>
+                                Koenig, S., Likhachev, M., & Sun, X. (2007). Speeding up moving-target search. Proceedings of the 6th International Joint Conference on Autonomous Agents and Multiagent Systems - AAMAS 07. doi:10.1145/1329125.1329353
+                            </li>
+                            <li>
+                                Zeigler-Hill, V., & Monica, S. (2015). The HEXACO model of personality and video game preferences. Entertainment Computing,11, 21-26. doi:10.1016/j.entcom.2015.08.001
+                            </li>
+                            <li>
+                                Bisits-Bullen, P. (2014). How to choose a sample size (for the statistically challenged). Retrieved from <a href="http://www.tools4dev.org/resources/how-to-choose-a-sample-size/">http://www.tools4dev.org/resources/how-to-choose-a-sample-size/</a> 
+                            </li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h2>Cited By:</h2>
+                        <em>No citations found yet.</em>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                [<a href="mailto:innovatus@uap.asia">innovatus@uap.asia</a>] | [ Pearl Dr, Ortigas Center, Pasig, 1605 Metro Manila]
+            </footer>
+        </article>
+    </body>
+</html>
