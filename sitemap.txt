@@ -1,3 +1,7 @@
+https://innovatus-pub.github.io/index.html
+https://innovatus-pub.github.io/innovatus-2018-volume-1-number-1.html
+https://innovatus-pub.github.io/innovatus-2019-volume-2-number-1.html
+https://innovatus-pub.github.io/innovatus-2020-volume-3-number-1.html
 https://innovatus-pub.github.io/archive/a-pre-trained-deep-convolutional-neural-network-for-the-detection-of-tungro-in-rice-plants.html
 https://innovatus-pub.github.io/archive/a-problem-oriented-approach-to-implementing-an-auto-sales-and-inventory-system-through-agile-methodology.html
 https://innovatus-pub.github.io/archive/a-problem-oriented-approach-to-implementing-an-inventory-and-point-of-sale-system-for-company-kcp.html
@@ -32,7 +36,9 @@ https://innovatus-pub.github.io/archive/project-sigaw-a-community-based-incident
 https://innovatus-pub.github.io/archive/real-time-wearable-locator-device-for-distress.html
 https://innovatus-pub.github.io/archive/they-know-a-pathfinding-rational-agent-via-knowledge-acquistion-modeling-from-player-behavior-and-enhanced-a-algorithm.html
 https://innovatus-pub.github.io/archive/trywork-internship-recommender-services-and-management-system-utilizing-fuzzy-search-algorithm.html
-https://innovatus-pub.github.io/index.html
-https://innovatus-pub.github.io/innovatus-2018-volume-1-number-1.html
-https://innovatus-pub.github.io/innovatus-2019-volume-2-number-1.html
-https://innovatus-pub.github.io/innovatus-2020-volume-3-number-1.html
+https://sites.google.com/uap.asia/innovatus/why-submit-to-innovatus
+https://sites.google.com/uap.asia/innovatus/call-for-papers
+https://sites.google.com/uap.asia/innovatus/for-authors
+https://sites.google.com/uap.asia/innovatus/policies
+https://sites.google.com/uap.asia/innovatus/submit-your-research-papers
+https://sites.google.com/uap.asia/innovatus/editorial-board

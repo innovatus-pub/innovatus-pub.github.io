@@ -2,6 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>
+			https://innovatus-pub.github.io/index.html
+		</loc>
+		<lastmod>
+			2021-04-12
+		</lastmod>
+	</url>
+	<url>
+		<loc>
+			https://innovatus-pub.github.io/innovatus-2018-volume-1-number-1.html
+		</loc>
+		<lastmod>
+			2021-04-12
+		</lastmod>
+	</url>
+	<url>
+		<loc>
+			https://innovatus-pub.github.io/innovatus-2019-volume-2-number-1.html
+		</loc>
+		<lastmod>
+			2021-04-12
+		</lastmod>
+	</url>
+	<url>
+		<loc>
+			https://innovatus-pub.github.io/innovatus-2020-volume-3-number-1.html
+		</loc>
+		<lastmod>
+			2021-04-12
+		</lastmod>
+	</url>
+	<url>
+		<loc>
 			https://innovatus-pub.github.io/archive/a-pre-trained-deep-convolutional-neural-network-for-the-detection-of-tungro-in-rice-plants.html
 		</loc>
 		<lastmod>
@@ -274,7 +306,7 @@
 	</url>
 	<url>
 		<loc>
-			https://innovatus-pub.github.io/index.html
+			https://sites.google.com/uap.asia/innovatus/why-submit-to-innovatus
 		</loc>
 		<lastmod>
 			2021-04-12
@@ -282,7 +314,7 @@
 	</url>
 	<url>
 		<loc>
-			https://innovatus-pub.github.io/innovatus-2018-volume-1-number-1.html
+			https://sites.google.com/uap.asia/innovatus/call-for-papers
 		</loc>
 		<lastmod>
 			2021-04-12
@@ -290,7 +322,7 @@
 	</url>
 	<url>
 		<loc>
-			https://innovatus-pub.github.io/innovatus-2019-volume-2-number-1.html
+			https://sites.google.com/uap.asia/innovatus/for-authors
 		</loc>
 		<lastmod>
 			2021-04-12
@@ -298,10 +330,26 @@
 	</url>
 	<url>
 		<loc>
-			https://innovatus-pub.github.io/innovatus-2020-volume-3-number-1.html
+			https://sites.google.com/uap.asia/innovatus/policies
 		</loc>
 		<lastmod>
 			2021-04-12
 		</lastmod>
 	</url>
+	<url>
+		<loc>
+			https://sites.google.com/uap.asia/innovatus/submit-your-research-papers
+		</loc>
+		<lastmod>
+			2021-04-12
+		</lastmod>
+	</url>
+	<url>
+		<loc>		
+			https://sites.google.com/uap.asia/innovatus/editorial-board
+		</loc>
+		<lastmod>
+			2021-04-12
+		</lastmod>
+	</url>	
 </urlset>
