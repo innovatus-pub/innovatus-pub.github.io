@@ -36,9 +36,4 @@ https://innovatus-pub.github.io/archive/project-sigaw-a-community-based-incident
 https://innovatus-pub.github.io/archive/real-time-wearable-locator-device-for-distress.html
 https://innovatus-pub.github.io/archive/they-know-a-pathfinding-rational-agent-via-knowledge-acquistion-modeling-from-player-behavior-and-enhanced-a-algorithm.html
 https://innovatus-pub.github.io/archive/trywork-internship-recommender-services-and-management-system-utilizing-fuzzy-search-algorithm.html
-https://sites.google.com/uap.asia/innovatus/why-submit-to-innovatus
-https://sites.google.com/uap.asia/innovatus/call-for-papers
-https://sites.google.com/uap.asia/innovatus/for-authors
-https://sites.google.com/uap.asia/innovatus/policies
-https://sites.google.com/uap.asia/innovatus/submit-your-research-papers
-https://sites.google.com/uap.asia/innovatus/editorial-board
+
