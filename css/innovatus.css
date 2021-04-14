@@ -60,19 +60,36 @@
 
   /* On screens that are less than 700px wide, make the sidebar into a topbar */
   @media screen and (max-width: 700px) {
+    .journalbanner{
+      width:87vw!important;
+    }
+    .journal_title,.citation_title{
+      margin-top: 80px;
+    }
+    .journal_title,.citation_title, h2{
+      font-size: 18px!important;
+    }
+
     .sidebar {
       width: 100%;
       height: auto;
       position: relative;
     }
     div.content {margin-left: 0;}
-    .citation_title{
-      margin-top:unset !important;
-    }
+
     .sidebar a.icon {
       display: block;
       position:fixed;
     }
+
+    #publication, #publication > h2 {
+      font-size: 14px;
+      margin-top: 5px;
+      margin-bottom:5px;
+    }
+    #publication > em {
+      font-size: 8px;
+    }  
   }
   
   /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -87,11 +104,28 @@
     position: fixed;
     top: 0;
     background-color: black;
-    width: 100%;
+    width:100%;
   }
 
   .journal_title,.citation_title{
     margin-top: 80px;
+    font-size: 25px;
+  }
+  h2{
+    font-size: 23px;
+  }
+  .citation_author{
+    font-size: 18px;
+    margin-top: 2px;
+  }
+
+  #publication, #publication > h2 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  #publication > em {
+    font-size: 12px;
   }
 
   .journalsection{
@@ -107,7 +141,10 @@
 
   .paperdetails, #journalcontent{
     background-color:white;
-    padding:15px;
+    padding-top:5px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
     border-radius:5px;
   }
 
@@ -128,6 +165,7 @@
 
   #abstract{
     text-align:justify;
+    font-size:15px;
   }
 
   header{
@@ -137,6 +175,11 @@
   article{
     background-color:black;
   }
+
+  #references * li {
+    margin-bottom:13px;
+  }
+
   footer{
     background-color: #f1f1f1;
     padding: 10px;
