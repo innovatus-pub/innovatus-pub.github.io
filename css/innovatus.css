@@ -117,8 +117,14 @@
   .citation_author{
     font-size: 18px;
     margin-top: 2px;
+    float:left;
+    margin-right: 5px;
   }
 
+  #publication {
+    clear: left;
+  }
+    
   #publication, #publication > h2 {
     font-size: 16px;
     margin-top: 10px;
