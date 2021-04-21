@@ -34,6 +34,14 @@
 	</url>
 	<url>
 		<loc>
+			https://innovatus-pub.github.io/innovatus-2021-volume-4-number-1.html
+		</loc>
+		<lastmod>
+			2021-04-21
+		</lastmod>
+	</url>
+	<url>
+		<loc>
 			https://innovatus-pub.github.io/archive/a-pre-trained-deep-convolutional-neural-network-for-the-detection-of-tungro-in-rice-plants.html
 		</loc>
 		<lastmod>
@@ -302,6 +310,30 @@
 		</loc>
 		<lastmod>
 			2021-04-12
+		</lastmod>
+	</url>
+	<url>
+		<loc>
+			https://innovatus-pub.github.io/archive/development-of-a-hotel-inventory-system-through-agile-methodology.html
+		</loc>
+		<lastmod>
+			2021-04-21
+		</lastmod>
+	</url>
+	<url>
+		<loc>
+https://innovatus-pub.github.io/archive/development-of-an-inventory-and-service-management-system-for-an-auto-repair-shop-using-agile-methodology.html
+		</loc>
+		<lastmod>
+			2021-04-21
+		</lastmod>
+	</url>
+	<url>
+		<loc>
+https://innovatus-pub.github.io/archive/ejeep-nn-an-android-ejeep-guide-app-with-gps-and-open-trip-planner-api-for-the-new-normal.html
+		</loc>
+		<lastmod>
+			2021-04-21
 		</lastmod>
 	</url>
 </urlset>
