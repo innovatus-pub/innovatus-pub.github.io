@@ -47,7 +47,7 @@ body {
   height: 102%;
   left: 0;
   top: 0;
-  background-color: #f8a488;
+  background-color: #1768AC;
   clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
 }
 
@@ -302,9 +302,9 @@ a:focus {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
-  height: 40%;
+  height: 30%;
   background-color: #fff;
-  filter: blur(95px) opacity(.3);
+  filter: blur(97px) opacity(.27);
 }
 
 .slider_section .carousel-indicators {
@@ -440,13 +440,13 @@ a:focus {
   display: inline-block;
   padding: 8px 25px;
   border: 2px solid #45526C;
-  color: #45526C;
+  color: #03256C;
   border-radius: 35px;
   margin-top: 55px;
 }
 
 .about_card a:hover {
-  background-color: #45526C;
+  background-color: #03256C;
   color: #fefeff;
 }
 
@@ -482,36 +482,39 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border-bottom: 1px solid #9be604;
 }
 
 .team_card {
   width: 250px;
   padding: 0 15px;
-  margin: 35px 0;
+  margin: 55px 55px;
 }
 
 .team_card h5 {
   text-transform: uppercase;
 }
 
+.team_card a {
+  color: #03256C;
+}
+
 .team_card img {
+  align: center;
   width: 100%;
 }
 
 .team_detail-box {
-  width: 150px;
-  margin: 35px auto 0 auto;
+  text-align: center;
+  width: 330px;
+  margin: 35px auto 0 -60px;
 }
 
 .team_social {
   display: flex;
   justify-content: space-between;
+  width: 100px;
 }
 
-.team_follow h6 {
-  color: #9be604;
-}
 
 /* end team section */
 
@@ -683,6 +686,14 @@ a:focus {
   background-color: #626262;
 }
 
+.section_break {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #626262;
+  opacity: 20%;
+}
+
 .longparagraph_justify {
   text-align: justify;
 }
@@ -701,3 +712,74 @@ a:focus {
   margin-left: 110px;
   margin-right: 110px;
 }
+
+#list_justified {
+  text-align: justify;
+  margin-left: 110px;
+  margin-right: 110px;
+}
+
+#link_dark {
+	color: #03256C;
+}
+
+#link_black {
+	color: black;
+}
+
+/* Board member detail section */
+.board_section {
+  text-align: center;
+}
+
+.board_section .row>div {
+  margin: 20px 0;
+
+}
+
+#board_paragraph p {
+  text-align: justify;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#board_paragraph img {
+  max-width: 20%;
+}
+
+.board_card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.board_card {
+  margin-top: -70px;
+  width: 30%;
+  min-width: 300px;
+  height: 5px;
+}
+
+#link_center a{
+  color: #45526C;
+}
+
+.board_btn {
+  display: inline-block;
+  padding: 8px 25px;
+  border: 2px solid #03256C;
+  color: #45526C;
+  border-radius: 35px;
+  margin-top: 55px;
+}
+
+.board_card a:hover {
+  background-color: #03256C;
+  color: #fefeff;
+}
+
+
+
+/* End board member detail section */
