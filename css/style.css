@@ -780,6 +780,33 @@ a:focus {
   color: #fefeff;
 }
 
-
-
 /* End board member detail section */
+
+/* Hub button section */
+.hub_card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hub_card {
+  margin-top: -70px;
+  width: 40%;
+  min-width: 300px;
+  height: 5px;
+}
+
+.hub_btn {
+  display: inline-block;
+  padding: 8px 25px;
+  border: 2px solid #03256C;
+  color: #fefeff;
+  background-color: #03256C;
+  border-radius: 35px;
+  margin-top: 55px;
+  font-size: 20px;
+}
+
+.hub_card a:hover {
+  background-color: #fefeff;
+  color: #03256C;
+}
