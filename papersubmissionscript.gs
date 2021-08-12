@@ -107,8 +107,8 @@ function extractEmails() {
         var attachments = mesgs[j].getAttachments();
           for(var k in attachments){
             var attachment = attachments[k];
-            //      var isDefinedType = checkIfDefinedType_(attachment);
-            //    	if(!isDefinedType) continue;
+            var isDefinedType = checkIfDefinedType_(attachment);
+            if(!isDefinedType) continue;
     	      var attachmentBlob = attachment.copyBlob();
             //var fileid = attachmentBlob.getName()
             var file = DriveApp.createFile(attachmentBlob);
