@@ -810,3 +810,29 @@ a:focus {
   background-color: #fefeff;
   color: #03256C;
 }
+
+/* These are for indexed by images */
+.indexed {
+    display: inline-block;
+    border: 2px solid white;
+    color: white;
+    border-radius: 35px;
+    margin-top: 5px;
+}
+
+.listofindexed{
+    /* text-align:center; */
+}
+
+.indexed .pej {
+    width:10%;
+}
+
+.indexed img {
+    width:30%;
+}
+
+.indexed:hover{
+    background-color: white;
+    color: #03256C;
+}
