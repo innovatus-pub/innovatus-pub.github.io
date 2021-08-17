@@ -23,7 +23,7 @@ function extractEmails() {
   try { 
 
     //Gmail search 
-    var query = 'subject:Paper-Submissions has:attachment -label:Extracted';
+    var query = 'subject:(Paper-Submissions) has:attachment -label:Extracted in:anywhere';
     var threads = GmailApp.search(query);
     var messages = GmailApp.getMessagesForThreads (threads);
     var label = getGmailLabel_(labelName);
@@ -108,6 +108,8 @@ function extractEmails() {
           for(var k in attachments){
             var attachment = attachments[k];
             var isDefinedType = checkIfDefinedType_(attachment);
+            var check = 0;
+            if (isDefinedType == true) {check = 1;}
             if(!isDefinedType) continue;
     	      var attachmentBlob = attachment.copyBlob();
             //var fileid = attachmentBlob.getName()
@@ -130,11 +132,24 @@ function extractEmails() {
               rangen2 = sheet.getRange(r2,2)
               rangee2 = sheet.getRange(r2,3)
               ranget2 = sheet.getRange(r2,4)
+              var inc = "INCORRECT FILE TYPE"
   
-              if ((rangen2.isBlank() == false || rangee2.isBlank() == false) && ranget2.isBlank()) {
+              if (ranget2.isBlank()) {
 
-                  ranget2.setValue(fileid)
-                  count = 1
+                if (check == 0) {
+
+                    ranget2.setValue(inc)     
+                    count = 1
+
+                }
+
+                if (check == 1) {
+
+                    ranget2.setValue(fileid)
+                    count = 1
+
+                }
+          
 
               }
 
