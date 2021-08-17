@@ -836,3 +836,7 @@ a:focus {
     background-color: white;
     color: #03256C;
 }
+
+.about_img-box.gscholar{
+    width:unset;
+}
