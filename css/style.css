@@ -840,3 +840,11 @@ a:focus {
 .about_img-box.gscholar{
     width:unset;
 }
+
+.poster-center{
+    text-align:center;
+}
+
+.poster{
+    width:20%;
+}
