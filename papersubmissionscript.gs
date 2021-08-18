@@ -110,14 +110,15 @@ function extractEmails() {
             var isDefinedType = checkIfDefinedType_(attachment);
             var check = 0;
             if (isDefinedType == true) {check = 1;}
-            if(!isDefinedType) continue;
-    	      var attachmentBlob = attachment.copyBlob();
-            //var fileid = attachmentBlob.getName()
-            var file = DriveApp.createFile(attachmentBlob);
-            var fileid = file.getId()
-            //parentFolder = getFolder_(file.getName())
-            parentFolder.addFile(file);
-            root.removeFile(file);
+            if(isDefinedType) {
+    	        var attachmentBlob = attachment.copyBlob();
+              //var fileid = attachmentBlob.getName()
+              var file = DriveApp.createFile(attachmentBlob);
+              var fileid = file.getId()
+              //parentFolder = getFolder_(file.getName())
+              parentFolder.addFile(file);
+              root.removeFile(file);
+            }
 
             var ss = SpreadsheetApp.getActiveSpreadsheet();
             var sheet = ss.getActiveSheet()
@@ -136,14 +137,14 @@ function extractEmails() {
   
               if (ranget2.isBlank()) {
 
-                if (check == 0) {
+                if (isDefinedType == false) {
 
                     ranget2.setValue(inc)     
                     count = 1
 
                 }
 
-                if (check == 1) {
+                else {
 
                     ranget2.setValue(fileid)
                     count = 1
@@ -260,7 +261,9 @@ function GenerateFolders() {
     var temp1 = ranget.getValue()
     var temp2 = rangen.getValue()
 
-    if (rangel.isBlank() && rangen.isBlank() == false) {
+    var inc = "INCORRECT FILE TYPE"
+  
+    if (rangel.isBlank() && rangen.isBlank() == false && ranget2.getValue() != "INCORRECT FILE TYPE") {
 
       var folder = DriveApp.createFolder(temp1+" - "+temp2);
       folder.setSharing(DriveApp.Access.ANYONE, DriveApp.Permission.VIEW);
