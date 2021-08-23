@@ -104,61 +104,57 @@ function extractEmails() {
       var mesgs = threads[i].getMessages();
 	    for(var j in mesgs){
         //get attachments
+        //var attachments = null;
         var attachments = mesgs[j].getAttachments();
-          for(var k in attachments){
-            var attachment = attachments[k];
-            var isDefinedType = checkIfDefinedType_(attachment);
-            var check = 0;
-            if (isDefinedType == true) {check = 1;}
-            if(isDefinedType) {
-    	        var attachmentBlob = attachment.copyBlob();
-              //var fileid = attachmentBlob.getName()
-              var file = DriveApp.createFile(attachmentBlob);
-              var fileid = file.getId()
-              //parentFolder = getFolder_(file.getName())
-              parentFolder.addFile(file);
-              root.removeFile(file);
+
+        var l = attachments.length;
+        var inc = "INCORRECT FILE TYPE"
+        var attachment = attachments[0]; //get first attachment
+        var isDefinedType = checkIfDefinedType_(attachment);
+        var fileid = "";
+        if(isDefinedType) {
+          var attachmentBlob = attachment.copyBlob();
+          var file = DriveApp.createFile(attachmentBlob);
+          fileid = file.getId(); 
+          //parentFolder = getFolder_(file.getName())
+          parentFolder.addFile(file);
+          root.removeFile(file);
+        }
+
+        var ss = SpreadsheetApp.getActiveSpreadsheet();
+        var sheet = ss.getActiveSheet()
+
+        var rangen2 = sheet.getRange(r2,2)
+        var rangee2 = sheet.getRange(r2,3)
+        var ranget2 = sheet.getRange(r2,4)
+        var count = 0
+
+        while((rangen2.isBlank() == false || rangee2.isBlank() == false) && count == 0) {
+
+          rangen2 = sheet.getRange(r2,2)
+          rangee2 = sheet.getRange(r2,3)
+          ranget2 = sheet.getRange(r2,4)
+
+          if (ranget2.isBlank()) {
+            if (isDefinedType == false) {
+              ranget2.setValue(inc)     
+              count = 1
             }
-
-            var ss = SpreadsheetApp.getActiveSpreadsheet();
-            var sheet = ss.getActiveSheet()
-
-            var rangen2 = sheet.getRange(r2,2)
-            var rangee2 = sheet.getRange(r2,3)
-            var ranget2 = sheet.getRange(r2,4)
-            var count = 0
-  
-            while((rangen2.isBlank() == false || rangee2.isBlank() == false) && count == 0) {
-
-              rangen2 = sheet.getRange(r2,2)
-              rangee2 = sheet.getRange(r2,3)
-              ranget2 = sheet.getRange(r2,4)
-              var inc = "INCORRECT FILE TYPE"
-  
-              if (ranget2.isBlank()) {
-
-                if (isDefinedType == false) {
-
-                    ranget2.setValue(inc)     
-                    count = 1
-
-                }
-
-                else {
-
-                    ranget2.setValue(fileid)
-                    count = 1
-
-                }
-          
-
+            else {
+              if (l > 1) 
+              {
+                ranget2.setBackground("yellow");
+                ranget2.setValue("WARNING: Multiple attachments found: " + l);
               }
-
-              r2 = r2+1 
-
+              else
+              {
+                ranget2.setValue(fileid);                
+              }
+              count = 1
             }
-
           }
+          r2 = r2+1 
+        }
 	    } 
 
 	    threads[i].addLabel(label);
