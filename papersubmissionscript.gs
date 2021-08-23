@@ -109,7 +109,7 @@ function extractEmails() {
 
         var l = attachments.length;
         var inc = "INCORRECT FILE TYPE"
-        var attachment = attachments[0]; //get first attachment
+        /*var attachment = attachments[0]; //get first attachment
         var isDefinedType = checkIfDefinedType_(attachment);
         var fileid = "";
         if(isDefinedType) {
@@ -119,6 +119,22 @@ function extractEmails() {
           //parentFolder = getFolder_(file.getName())
           parentFolder.addFile(file);
           root.removeFile(file);
+        }*/
+        var atts = []
+        for(k in attachments) {
+          var attachment = attachments[k];
+          var isDefinedType = checkIfDefinedType_(attachment);
+          var fileid = "";
+          if(isDefinedType) {
+            var attachmentBlob = attachment.copyBlob();
+            var file = DriveApp.createFile(attachmentBlob);
+            fileid = file.getId(); 
+            //parentFolder = getFolder_(file.getName())
+            parentFolder.addFile(file);
+            root.removeFile(file);
+            atts.push(fileid);
+            //Logger.log("1:"+atts)
+          }
         }
 
         var ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -143,8 +159,15 @@ function extractEmails() {
             else {
               if (l > 1) 
               {
+                var str = "";
+                for(k in atts) {
+                  str += atts[k]+","
+                }
                 ranget2.setBackground("yellow");
-                ranget2.setValue("WARNING: Multiple attachments found: " + l);
+                //ranget2.setValue("WARNING: Multiple attachments found: " + l);
+                //Logger.log(l);
+                //Logger.log("2:"+atts)
+                ranget2.setValue(str); 
               }
               else
               {
@@ -271,19 +294,59 @@ function GenerateFolders() {
       rangel.setValue(url)
 
       //Paper Submissions folder
-      var inputFolder = DriveApp.getFolderById('1kSUU2Mrq2E9y5d2G3piAA5DjxmpCmbff')
-      var files = inputFolder.getFiles();
+      //var inputFolder = DriveApp.getFolderById('1kSUU2Mrq2E9y5d2G3piAA5DjxmpCmbff')
+      //var files = inputFolder.getFiles();
       var id = ranget2.getValue()
 
       if (ranget2.isBlank() == false) {
 
-        while (files.hasNext()) {
-          var file = files.next()
-          var fileid = file.getId()
+        if (id.includes(",")) {
 
-          if (fileid == id) {
-            file.moveTo(getid);
+          var array = [];
+          array = id.split(",");
+          var i = 0
+
+          while (i < (array.length-1)) { 
+
+            var inputFolder = DriveApp.getFolderById('1kSUU2Mrq2E9y5d2G3piAA5DjxmpCmbff')
+            var files = inputFolder.getFiles();
+
+            var id2 = array[i];
+            //Logger.log(id2)
+
+            while (files.hasNext()) {
+              var file = files.next()
+              var fileid = file.getId()
+
+              if (fileid == id2) {
+                file.moveTo(getid);
+              }
+
+              //Logger.log("array[i]"+array[i])
+              //Logger.log("id2: "+id2)
+
+            }
+
+            i = i+1
+            //Logger.log("i: "+i)
           }
+
+        }
+
+        else {
+
+          var inputFolder = DriveApp.getFolderById('1kSUU2Mrq2E9y5d2G3piAA5DjxmpCmbff')
+          var files = inputFolder.getFiles();
+
+          while (files.hasNext()) {
+            var file = files.next()
+            var fileid = file.getId()
+
+            if (fileid == id) {
+              file.moveTo(getid);
+            }
+          }
+
         }
     
       }
