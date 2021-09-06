@@ -32,7 +32,7 @@ function SendEmails() {
 
   var sent = 0
   //Put the email quota cap.
-  //emailQuotaRemaining = 2; //debug
+  emailQuotaRemaining = 2; //debug
   while (emailRange.isBlank() == false && sent < emailQuotaRemaining) {
     rangen = sheet.getRange(r,nameIdx)
     emailRange = sheet.getRange(r, emailIdx)
@@ -47,12 +47,12 @@ function SendEmails() {
       'Warm greetings!\n'+
       '\n'+
       'The University of Asia and the Pacific (UA&P) – Information Science and Technology Department continues to undertake high level, interdisciplinary research in the area of Information Technology for the common good of society and to communicate the results of such research through various media and to varied audiences. As such we are pleased to announce the Special Issue of Innovatus entitled: \'Special Issue on Digital Transformation in Business Information Systems\'\n'+
-      '\n'+
-      'The digital transformation in the business industry has been on the rise for many years, and has only been accelerated by the COVID-19 pandemic. Many industries have been forced to shift to a remote work setup to adapt to the “new normal”. While the digital transformations for some businesses may have come about due to the circumstances, the changes implemented may still be improved to remain relevant in the foreseeable future.\n'+
+      'In this special issue, we would like to focus on technology and methods used to transform businesses, particularly in these areas, during the COVID-19 pandemic and how these will continue to apply moving forward. Please refer to the attached Call for Paper PDF file for additional information.\n'+
       '\n' +
-      'Mobile and Internet of Things (IoT) applications have helped with many different types of business improvements. During the pandemic, they have helped increase the efficiency and effectivity of remote setups, particularly in the field of medicine and education. Some of the challenges of these applications are data accuracy and the integration of new technologies towards monitoring, real-time processing, and process self-optimizations. As the shift towards the new normal continues, innovations in the mobile space can help businesses cope and thrive with the challenges of the pandemic.\n'+
-      '\n' +
-      'The education industry has taken a huge shift due to the pandemic. Schools and universities have been forced to adapt to the online setup, while some institutionshave slowly been shifting to a flexible blended learning format. As we continue to adjust to the new normal, the education setup and methods of teaching and learning will undoubtedly continue to evolve.\n'+
+      'Important Dates\n'+
+      '\n' + 
+      'Full Paper Submission Deadline: December 1, 2021\n' +
+      'Notification of Acceptance: Approximately 2 weeks after submission confirmation \n' +
       '\n' +
       'Suitable research/capstone topics include but are not limited to: \n'+
       '● Custom Systems Implementation supporting Remote Business Operations\n' +
@@ -66,13 +66,6 @@ function SendEmails() {
       '\n'+
       'Keywords: Business Information Systems, Digital Transformation, Custom Systems, Remote Work, Information Technology Entrepreneurship, Business Analytics, Data Science, Internet of Things, E-commerce, Online Learning\n' +
       '\n' +
-      'In this special issue, we would like to focus on technology and methods used to transform businesses, particularly in these areas, during the COVID-19 pandemic and how these will continue to apply moving forward.\n'+
-      '\n' +
-      'Important Dates\n'+
-      '\n' + 
-      'Full Paper Submission Deadline: December 1, 2021\n' +
-      'Notification of Acceptance: Approximately 2 weeks after submission confirmation \n' +
-      '\n'+
       'Papers submitted under this category will require a peer review phase with evaluators consulting the editor-in-chief regarding revisions and its acceptance for publication. The submission guidelines and the submission portal can be found here. Article Processing Charge (APC) will be waived for now. For inquiries, please email Mr. Giuseppe Ng at innovatus@uap.asia.\n'+
       '\n' +
       'Best Regards,\n'+
@@ -85,13 +78,15 @@ function SendEmails() {
       '<br />'+
       'Warm greetings!<br />'+
       '<br />'+
-      '<p>The <b>University of Asia and the Pacific (UA&P) – Information Science and Technology Department</b> continues to undertake high level, interdisciplinary research in the area of Information Technology for the common good of society and to communicate the results of such research through various media and to varied audiences. As such we are pleased to announce the Special Issue of Innovatus entitled: <b><i>\'Special Issue on Digital Transformation in Business Information Systems\'</i></b></p><br />'+
+      '<p>The <b>University of Asia and the Pacific (UA&P) – Information Science and Technology Department</b> continues to undertake high level, interdisciplinary research in the area of Information Technology for the common good of society and to communicate the results of such research through various media and to varied audiences. As such we are pleased to announce the Special Issue of Innovatus entitled: <b><i>\'Special Issue on Digital Transformation in Business Information Systems\'</i></b></p>'+
+      '<p>In this special issue, we would like to focus on technology and methods used to transform businesses, particularly in these areas, during the COVID-19 pandemic and how these will continue to apply moving forward. Please refer to the attached Call for Paper PDF file for additional information.</p>' +
+      '<b>IMPORTANT DATES</b><br />'+
+      '<br />' + 
+      '<b>Full Paper Submission Deadline:</b> December 1, 2021<br />' +
+      '<b>Notification of Acceptance:</b> Approximately 2 weeks after submission confirmation <br />' +
+      '<b>Official Website: </b><a href=\'https://innovatus.uap.asia\'>https://innovatus.uap.asia</a><br />'+
+      '<i>Indexed at Google Scholar</i>'+
       '<br />'+
-      '<center><b>CALL FOR PAPERS</b></center>' +
-      '<br />'+
-      '<p>The digital transformation in the business industry has been on the rise for many years, and has only been accelerated by the COVID-19 pandemic. Many industries have been forced to shift to a remote work setup to adapt to the “new normal”. While the digital transformations for some businesses may have come about due to the circumstances, the changes implemented may still be improved to remain relevant in the foreseeable future.</p>'+
-      '<p>Mobile and Internet of Things (IoT) applications have helped with many different types of business improvements. During the pandemic, they have helped increase the efficiency and effectivity of remote setups, particularly in the field of medicine and education. Some of the challenges of these applications are data accuracy and the integration of new technologies towards monitoring, real-time processing, and process self-optimizations. As the shift towards the new normal continues, innovations in the mobile space can help businesses cope and thrive with the challenges of the pandemic.</p>'+
-      '<p>The education industry has taken a huge shift due to the pandemic. Schools and universities have been forced to adapt to the online setup, while some institutions have slowly been shifting to a flexible blended learning format. As we continue to adjust to the new normal, the education setup and methods of teaching and learning will undoubtedly continue to evolve.</p>'+
       '<p>Suitable research/capstone topics include but are not limited to: <br />'+
       '<ul> <li>Custom Systems Implementation supporting Remote Business Operations</li>' +
       '<li>Information Technology Entrepreneurship</li>' +
@@ -103,14 +98,6 @@ function SendEmails() {
       '<li>E-commerce</li></ul>'+
       '<br />'+
       'Keywords: Business Information Systems, Digital Transformation, Custom Systems, Remote Work, Information Technology Entrepreneurship, Business Analytics, Data Science, Internet of Things, E-commerce, Online Learning</p>' +
-      '<p>In this special issue, we would like to focus on technology and methods used to transform businesses, particularly in these areas, during the COVID-19 pandemic and how these will continue to apply moving forward.</p>'+
-      '<br />' +
-      '<b>IMPORTANT DATES</b><br />'+
-      '<br />' + 
-      '<b>Full Paper Submission Deadline:</b> December 1, 2021<br />' +
-      '<b>Notification of Acceptance:</b> Approximately 2 weeks after submission confirmation <br />' +
-      '<b>Official Website: </b><a href=\'https://innovatus.uap.asia\'>https://innovatus.uap.asia</a><br />'+
-      '<br />'+
       '<p>Papers submitted under this category will require a peer review phase with evaluators consulting the editor-in-chief regarding revisions and its acceptance for publication. The submission guidelines and the submission portal can be found here. Article Processing Charge (APC) will be waived for now. For inquiries, please email Mr. Giuseppe Ng at <a href=\'mailto:innovatus@uap.asia\'>innovatus@uap.asia</a>.</p>'+
       '<br />' +
       'Best Regards,<br />'+
