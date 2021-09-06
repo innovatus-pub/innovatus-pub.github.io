@@ -32,6 +32,7 @@ function SendEmails() {
 
   var sent = 0
   //Put the email quota cap.
+  //emailQuotaRemaining = 2; //debug
   while (emailRange.isBlank() == false && sent < emailQuotaRemaining) {
     rangen = sheet.getRange(r,nameIdx)
     emailRange = sheet.getRange(r, emailIdx)
