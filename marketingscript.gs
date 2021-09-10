@@ -10,8 +10,8 @@ function onOpen() {
 // Send a confirmation email to the sender with their unique Google Drive link 
 function SendEmails() {
   //Need to find out how much we can send.
-  //Reduce by 500 just to give a buffer.
-  var emailQuotaRemaining = MailApp.getRemainingDailyQuota() - 500;
+  //This is 150 emails at 10%
+  var emailQuotaRemaining = Math.floor(MailApp.getRemainingDailyQuota() * 0.1);
   //Call for Paper drive
   var cfp_file = DriveApp.getFileById('1uFCVFHH_nNi8o4Qy5IAeQkDRwUWanL5YIBSj_Z-le-0');
 
