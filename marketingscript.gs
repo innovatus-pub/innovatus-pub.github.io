@@ -3,6 +3,7 @@
 function onOpen() {
   var ui = SpreadsheetApp.getUi();
   ui.createMenu('Functions')
+      .addItem('Get Quota','getQuota')
       .addItem('Send Emails', 'SendEmails')
       .addToUi();
 }
