@@ -848,3 +848,12 @@ a:focus {
 .poster{
     width:50%;
 }
+
+.publication_section{
+   font-weight: bold;  
+}
+
+.publication{
+    text-align:left;
+}
+
