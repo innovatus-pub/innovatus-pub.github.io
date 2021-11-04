@@ -10,7 +10,7 @@ function onOpen() {
 
 function getQuota()
 {
-  var emailQuotaRemaining = Math.floor(MailApp.getRemainingDailyQuota() * 0.1);
+  var emailQuotaRemaining = Math.floor(MailApp.getRemainingDailyQuota() * 0.2);
   console.log(emailQuotaRemaining);
 }
 
@@ -19,7 +19,7 @@ function SendEmails() {
   //Need to find out how much we can send.
   //This is 150 emails at 10% (UAP)
   //This is 10 emails for Gmail
-  var emailQuotaRemaining = Math.floor(MailApp.getRemainingDailyQuota() * 0.1);
+  var emailQuotaRemaining = Math.floor(MailApp.getRemainingDailyQuota() * 0.2);
   //Call for Paper drive
   var cfp_file = DriveApp.getFileById('1uFCVFHH_nNi8o4Qy5IAeQkDRwUWanL5YIBSj_Z-le-0');
 
@@ -76,6 +76,8 @@ function SendEmails() {
       '\n' +
       'Papers submitted under this category will require a peer review phase with evaluators consulting the editor-in-chief regarding revisions and its acceptance for publication. The submission guidelines and the submission portal can be found here. Article Processing Charge (APC) will be waived for now. For inquiries, please email Mr. Giuseppe Ng at innovatus@uap.asia.\n'+
       '\n' +
+      'If you do not wish to receive these notifications, please let us know at innovatus@uap.asia' +
+      '\n' +
       'Best Regards,\n'+
       'Innovatus Team'
       //https://developers.google.com/apps-script/reference/mail/mail-app#sendEmail%28String,String,String,Object%29
@@ -107,6 +109,8 @@ function SendEmails() {
       '<br />'+
       'Keywords: Business Information Systems, Digital Transformation, Custom Systems, Remote Work, Information Technology Entrepreneurship, Business Analytics, Data Science, Internet of Things, E-commerce, Online Learning</p>' +
       '<p>Papers submitted under this category will require a peer review phase with evaluators consulting the editor-in-chief regarding revisions and its acceptance for publication. The submission guidelines and the submission portal can be found here. Article Processing Charge (APC) will be waived for now. For inquiries, please email Mr. Giuseppe Ng at <a href=\'mailto:innovatus@uap.asia\'>innovatus@uap.asia</a>.</p>'+
+      '<br />' +
+      'If you do not wish to receive these notifications, please let us know at <a href=\'mailto:innovatus@uap.asia\'>innovatus@uap.asia</a>' +
       '<br />' +
       'Best Regards,<br />'+
       '<b>Giuseppe Ng</b><br />' +
