@@ -857,3 +857,6 @@ a:focus {
     text-align:left;
 }
 
+.citation-data * th {
+    padding-right: 15px;
+}
