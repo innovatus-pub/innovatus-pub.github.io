@@ -12,6 +12,10 @@ https://innovatus-pub.github.io/editorialboard_info/EnriqueLigot.html
 https://innovatus-pub.github.io/editorialboard_info/FlorencioGaa.html
 https://innovatus-pub.github.io/editorialboard_info/GiuseppeNg.html
 https://innovatus-pub.github.io/editorialboard_info/KimberleyVallesteros.html
+https://innovatus-pub.github.io/editorialboard_info/RuelManingas.html
+https://innovatus-pub.github.io/editorialboard_info/BeatriceQuilinguin.html
+https://innovatus-pub.github.io/editorialboard_info/ProsperoNaval.html
+https://innovatus-pub.github.io/editorialboard_info/VarsSunio.html
 https://innovatus-pub.github.io/abstractpublications_archive/abstractpublications_2018.html
 https://innovatus-pub.github.io/abstractpublications_archive/abstractpublications_2019.html
 https://innovatus-pub.github.io/abstractpublications_archive/abstractpublications_2020.html
@@ -62,3 +66,6 @@ https://innovatus-pub.github.io/abstractpublications_archive/2020/paper7.html
 https://innovatus-pub.github.io/abstractpublications_archive/2021/paper1.html
 https://innovatus-pub.github.io/abstractpublications_archive/2021/paper2.html
 https://innovatus-pub.github.io/abstractpublications_archive/2021/paper3.html
+https://innovatus-pub.github.io/abstractpublications_archive/2022/paper1.html
+https://innovatus-pub.github.io/abstractpublications_archive/abstractpublications_2022.html
+
