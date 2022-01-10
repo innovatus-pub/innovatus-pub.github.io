@@ -2,5 +2,4 @@ user-agent: *
 allow: /*
 
 sitemap: https://innovatus-pub.github.io/sitemap.txt
-sitemap: https://innovatus-pub.github.io/sitemap.xml
 
