@@ -25,7 +25,7 @@
 
 @media (max-width: 768px) {
     .slider_img-box img {
-        padding-left:250px;
+        display:none;
     }
     
     .slider_detail {
@@ -58,6 +58,12 @@
         width:unset;
     }
 
+    .slider_img-box img {
+	display:none;
+    }
+    .carousel.slide.pointer-event {
+	padding-bottom: 20px;
+    }
 }
 
 @media (max-width: 400px) {}
@@ -72,6 +78,10 @@
 }
 @media (min-width: 1000px) and (max-width:1024px) {
     .slider_img-box img {
-        padding-left:100px;
+        padding-left:150px;
     }
+    .carousel.slide.pointer-event {
+	padding-bottom: 20px;
+    }
+
 }
