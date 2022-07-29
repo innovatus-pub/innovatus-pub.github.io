@@ -69,4 +69,7 @@ https://innovatus-pub.github.io/abstractpublications_archive/2021/paper2.html
 https://innovatus-pub.github.io/abstractpublications_archive/2021/paper3.html
 https://innovatus-pub.github.io/abstractpublications_archive/2022/paper1.html
 https://innovatus-pub.github.io/abstractpublications_archive/abstractpublications_2022.html
-
+https://innovatus-pub.github.io/abstractpublications_archive/2022/paper2.html
+https://innovatus-pub.github.io/abstractpublications_archive/2022/paper3.html
+https://innovatus-pub.github.io/abstractpublications_archive/2022/paper4.html
+https://innovatus-pub.github.io/abstractpublications_archive/2022/paper5.html
