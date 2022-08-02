@@ -860,3 +860,12 @@ a:focus {
 .citation-data * th {
     padding-right: 15px;
 }
+
+.cancelled {
+    text-decoration: line-through;
+    font-weight: initial;
+}
+
+.newdate {
+    color: #fdb815;
+}
