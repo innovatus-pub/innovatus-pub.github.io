@@ -74,3 +74,9 @@ https://innovatus-pub.github.io/abstractpublications_archive/2022/paper2.html
 https://innovatus-pub.github.io/abstractpublications_archive/2022/paper3.html
 https://innovatus-pub.github.io/abstractpublications_archive/2022/paper4.html
 https://innovatus-pub.github.io/abstractpublications_archive/2022/paper5.html
+https://innovatus-pub.github.io/abstractpublications_archive/abstractpublications_2022b.html
+https://innovatus-pub.github.io/abstractpublications_archive/2022b/paper1.html
+https://innovatus-pub.github.io/abstractpublications_archive/2022b/paper2.html
+https://innovatus-pub.github.io/abstractpublications_archive/2022b/paper3.html
+https://innovatus-pub.github.io/abstractpublications_archive/2022b/paper4.html
+https://innovatus-pub.github.io/abstractpublications_archive/2022b/paper5.html
