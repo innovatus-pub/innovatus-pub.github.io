@@ -234,25 +234,31 @@ function checkIfDefinedType_(attachment){
 // Generates tickets for each email address extracted
 function GenerateTickets() {
 
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var ss = SpreadsheetApp.getActiveSpreadsheet()
   var sheet = ss.getActiveSheet()
+  
 
   var r = 2
-
-  var rangen = sheet.getRange(r,2)
-  var rangee = sheet.getRange(r,3)
   
-  while (rangen.isBlank() == false || rangee.isBlank() == false) {
-
-    rangen = sheet.getRange(r,2)
-    rangee = sheet.getRange(r,3)
-    var ranget = sheet.getRange(r-1,1)
-
-    if(ranget.isBlank()) {
-      ranget.setValue(r-2)
+  var ranget = sheet.getRange('A:A')
+  var rangen = sheet.getRange('B:B')
+  var rangee = sheet.getRange('C:C')
+  var valuest = ranget.getValues() // get all data in one call
+  var valuesn = rangen.getValues() // get all data in one call
+  var valuese = rangee.getValues() // get all data in one call
+  
+  var ct = 0
+  
+  while (valuesn[ct][0] != "" || valuese[ct][0] != "") {
+        
+    if(valuest[ct][0] == "")
+    {
+      var rangept = sheet.getRange(r-1,1)
+      rangept.setValue(r-2)
+     
     }
-
-    r = r+1
+    r++
+    ct++
 
   }
 
