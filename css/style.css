@@ -869,3 +869,8 @@ a:focus {
 .newdate {
     color: #fdb815;
 }
+
+.footnote {
+    text-align:left;
+    font-size:10px;
+}
